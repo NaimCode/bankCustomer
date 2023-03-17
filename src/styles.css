@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+     body{
+        @apply  bg-background ;
+     }
+     
+     h1{
+        @apply text-4xl font-semibold !important;
+     }
+     h2{
+        @apply text-3xl font-semibold !important;
+     }
+        h3{
+            @apply text-2xl font-semibold !important;
+        }
+     
+}
