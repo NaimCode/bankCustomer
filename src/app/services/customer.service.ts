@@ -14,5 +14,8 @@ export class CustomerService {
   getCustomers():Observable<Customer[]>{
     return this.http.get<Customer[]>(this.url);
   }
+  searchCustomers(term:string):Observable<Customer[]>{
+    return this.http.get<Customer[]>(`${this.url}?q=${term}`);
+  }
 
 }

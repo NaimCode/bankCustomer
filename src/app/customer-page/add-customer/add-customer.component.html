@@ -1,0 +1,49 @@
+<button (click)="modalIsOpen = true"
+    class="flex flex-row gap-2 text-xs font-semibold items-center hover:bg-background rounded-md px-2 py-[6px]">
+    <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" fill="#000000">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+            <path
+                d="M512 1024C229.7 1024 0 794.3 0 512S229.7 0 512 0s512 229.7 512 512-229.7 512-512 512z m0-938.7C276.7 85.3 85.3 276.7 85.3 512S276.7 938.7 512 938.7 938.7 747.3 938.7 512 747.3 85.3 512 85.3z"
+                fill="#3688FF"></path>
+            <path
+                d="M682.7 554.7H341.3c-23.6 0-42.7-19.1-42.7-42.7s19.1-42.7 42.7-42.7h341.3c23.6 0 42.7 19.1 42.7 42.7s-19.1 42.7-42.6 42.7z"
+                fill="#5F6379"></path>
+            <path
+                d="M512 725.3c-23.6 0-42.7-19.1-42.7-42.7V341.3c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7v341.3c0 23.6-19.1 42.7-42.7 42.7z"
+                fill="#5F6379"></path>
+        </g>
+    </svg>
+    new customer
+</button>
+<div class="fixed top-0 left-0 w-screen h-screen bg-black/50 z-[100] flex flex-row items-center justify-center">
+    <div class="bg-white rounded-md p-6  w-[500px] space-y-4">
+        <h6>New Customer</h6>
+        <hr>
+        <div class="flex flex-row items-center justify-between gap-3">
+            <input placeholder="First Name" type="text" class="w-1/2">
+            <input placeholder="Last Name" type="text" class="w-1/2">
+        </div>
+        <input placeholder="Email" type="email" class="w-full">
+        <textarea placeholder="address" rows="3" class="w-full"></textarea>
+       <div class="grid grid-cols-2 items-center">
+     <div class="flex flex-row gap-1 items-center w-1/2">
+       <span> $</span> <input type="number">
+     </div>
+        <div class="flex flex-row gap-3 text-xs font-semibold w-[40%] translate-x-10">
+            <label for="male" class="flex flex-row items-center gap-1">
+                <input type="radio" name="gender" id="male">
+                Male
+            </label>
+            <label for="female" class="flex flex-row items-center gap-1">
+                <input type="radio" name="gender" id="female">
+                Female
+            </label>
+        </div>
+       </div>
+    </div>
+
+
+</div>

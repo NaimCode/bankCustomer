@@ -1,73 +1,327 @@
-<section class="bg-white rounded-xl p-6 shadow-sm space-y-3 ">
+<section class="bg-white rounded-xl p-6 shadow-sm space-y-3 w-[900px]">
     <div class="flex flex-row justify-between items-center gap-6">
         <h4>Customers</h4>
         <div class="flex-grow"></div>
         <div class="w-[250px] bg-accent rounded-md p-1 px-2 flex flex-row gap-2 items-center text-gray-700">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.77 18.3C9.2807 18.3 7.82485 17.8584 6.58655 17.031C5.34825 16.2036 4.38311 15.0275 3.81318 13.6516C3.24325 12.2757 3.09413 10.7616 3.38468 9.30096C3.67523 7.84029 4.39239 6.49857 5.44548 5.44548C6.49857 4.39239 7.84029 3.67523 9.30096 3.38468C10.7616 3.09413 12.2757 3.24325 13.6516 3.81318C15.0275 4.38311 16.2036 5.34825 17.031 6.58655C17.8584 7.82485 18.3 9.2807 18.3 10.77C18.3 11.7588 18.1052 12.738 17.7268 13.6516C17.3484 14.5652 16.7937 15.3953 16.0945 16.0945C15.3953 16.7937 14.5652 17.3484 13.6516 17.7268C12.738 18.1052 11.7588 18.3 10.77 18.3ZM10.77 4.74999C9.58331 4.74999 8.42327 5.10189 7.43657 5.76118C6.44988 6.42046 5.68084 7.35754 5.22672 8.45389C4.77259 9.55025 4.65377 10.7566 4.88528 11.9205C5.11679 13.0844 5.68824 14.1535 6.52735 14.9926C7.36647 15.8317 8.43556 16.4032 9.59945 16.6347C10.7633 16.8662 11.9697 16.7474 13.0661 16.2933C14.1624 15.8391 15.0995 15.0701 15.7588 14.0834C16.4181 13.0967 16.77 11.9367 16.77 10.75C16.77 9.15869 16.1379 7.63257 15.0126 6.50735C13.8874 5.38213 12.3613 4.74999 10.77 4.74999Z" fill="#000000"></path> <path d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z" fill="#000000"></path> </g></svg>
-            <input placeholder="Search a customer" type="search" class="bg-transparent flex-grow outline-none">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M10.77 18.3C9.2807 18.3 7.82485 17.8584 6.58655 17.031C5.34825 16.2036 4.38311 15.0275 3.81318 13.6516C3.24325 12.2757 3.09413 10.7616 3.38468 9.30096C3.67523 7.84029 4.39239 6.49857 5.44548 5.44548C6.49857 4.39239 7.84029 3.67523 9.30096 3.38468C10.7616 3.09413 12.2757 3.24325 13.6516 3.81318C15.0275 4.38311 16.2036 5.34825 17.031 6.58655C17.8584 7.82485 18.3 9.2807 18.3 10.77C18.3 11.7588 18.1052 12.738 17.7268 13.6516C17.3484 14.5652 16.7937 15.3953 16.0945 16.0945C15.3953 16.7937 14.5652 17.3484 13.6516 17.7268C12.738 18.1052 11.7588 18.3 10.77 18.3ZM10.77 4.74999C9.58331 4.74999 8.42327 5.10189 7.43657 5.76118C6.44988 6.42046 5.68084 7.35754 5.22672 8.45389C4.77259 9.55025 4.65377 10.7566 4.88528 11.9205C5.11679 13.0844 5.68824 14.1535 6.52735 14.9926C7.36647 15.8317 8.43556 16.4032 9.59945 16.6347C10.7633 16.8662 11.9697 16.7474 13.0661 16.2933C14.1624 15.8391 15.0995 15.0701 15.7588 14.0834C16.4181 13.0967 16.77 11.9367 16.77 10.75C16.77 9.15869 16.1379 7.63257 15.0126 6.50735C13.8874 5.38213 12.3613 4.74999 10.77 4.74999Z"
+                        fill="#000000"></path>
+                    <path
+                        d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+            <input placeholder="Search a customer" (input)="onSearch($event)" type="search" class="bg-transparent flex-grow outline-none">
         </div>
-        <button class="flex flex-row gap-2 text-xs font-semibold items-center hover:bg-background rounded-md px-2 py-[6px]">
-            <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 1024C229.7 1024 0 794.3 0 512S229.7 0 512 0s512 229.7 512 512-229.7 512-512 512z m0-938.7C276.7 85.3 85.3 276.7 85.3 512S276.7 938.7 512 938.7 938.7 747.3 938.7 512 747.3 85.3 512 85.3z" fill="#3688FF"></path><path d="M682.7 554.7H341.3c-23.6 0-42.7-19.1-42.7-42.7s19.1-42.7 42.7-42.7h341.3c23.6 0 42.7 19.1 42.7 42.7s-19.1 42.7-42.6 42.7z" fill="#5F6379"></path><path d="M512 725.3c-23.6 0-42.7-19.1-42.7-42.7V341.3c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7v341.3c0 23.6-19.1 42.7-42.7 42.7z" fill="#5F6379"></path></g></svg>
-        new customer
-        </button>
+        <app-add-customer/>
 
     </div>
     <hr>
 
-   
-<div class="relative overflow-x-auto">
-    <table class="w-full text-sm text-left text-gray-500">
-        <thead class="text-[10px] text-gray-700 uppercase bg-gray-50 whitespace-nowrap">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Profile
-                </th>
-                <th scope="col" class="px-6 py-3">
-                   Email
-                </th>
-                <th scope="col" class="px-6 py-3 text-center">
-                    Gender
-                </th>
-                <th scope="col" class="px-6 py-3 text-end">
-                   Amount
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    created at
-                 </th>
-                 <th scope="col" class="px-6 py-3">
-                   
-                 </th>
-            </tr>
-        </thead>
-        <tbody >
-            <tr *ngFor="let customer of customers" class="bg-white border-b group overflow-x-hidden transition-all duration-500 hover:bg-slate-50">
-                <th scope="row" class="flex flex-row gap-2 px-6 py-4 font-semibold text-gray-900 whitespace-nowrap items-center">
-                   <img [src]="customer.image||'./../../../assets/no-photo.png'" [alt]="customer.firstName" class="w-10" >
-                   <span>{{customer.firstName[0]}}. {{customer.lastName}}</span>
-                </th>
-                <td class="px-6 py-4">
-                    {{customer.email}}
-                </td>
-                <td class="px-6 py-4 flex flex-row items-center justify-center">
-                    <svg *ngIf="customer.gender==='Male'" width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#5300b8" d="M399.5 849.5a225 225 0 1 0 0-450 225 225 0 0 0 0 450zm0 56.25a281.25 281.25 0 1 1 0-562.5 281.25 281.25 0 0 1 0 562.5zm253.125-787.5h225q28.125 0 28.125 28.125T877.625 174.5h-225q-28.125 0-28.125-28.125t28.125-28.125z"></path><path fill="#5300b8" d="M877.625 118.25q28.125 0 28.125 28.125v225q0 28.125-28.125 28.125T849.5 371.375v-225q0-28.125 28.125-28.125z"></path><path fill="#5300b8" d="M604.813 458.9 565.1 419.131l292.613-292.668 39.825 39.824z"></path></g></svg>
-                    <svg *ngIf="customer.gender==='Female'" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 18H15M12 13V21M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13Z" stroke="#8b6bff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </td>
-                <td class="px-6 py-4 text-end">
-                    ${{customer.amount||0}}
-                </td>
-                <td class="px-6 py-4 text-center">
-                    {{customer.createdAt ? customer.createdAt.toLocaleString() : '---'}}
-                </td>
-                <td class="px-6 py-4">
-                    <button title="More" class=" text-white px-4 py-2 rounded-md transition-all">
-                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM11.0049 8.005C11.0049 8.55728 11.4526 9.005 12.0049 9.005C12.5572 9.005 13.0049 8.55728 13.0049 8.005V7.995C13.0049 7.44271 12.5572 6.995 12.0049 6.995C11.4526 6.995 11.0049 7.44271 11.0049 7.995V8.005ZM12.0049 13.005C11.4526 13.005 11.0049 12.5573 11.0049 12.005V11.995C11.0049 11.4427 11.4526 10.995 12.0049 10.995C12.5572 10.995 13.0049 11.4427 13.0049 11.995V12.005C13.0049 12.5573 12.5572 13.005 12.0049 13.005ZM12.0049 17.005C11.4526 17.005 11.0049 16.5573 11.0049 16.005V15.995C11.0049 15.4427 11.4526 14.995 12.0049 14.995C12.5572 14.995 13.0049 15.4427 13.0049 15.995V16.005C13.0049 16.5573 12.5572 17.005 12.0049 17.005Z" fill="#5c67ff"></path> </g></svg>
-                    </button>
-                </td>
-            </tr>
-            
-           
-        </tbody>
-    </table>
-</div>
+
+    <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500">
+            <thead class="text-[10px] text-gray-700 uppercase bg-gray-50 whitespace-nowrap">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Profile
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-center">
+                        Gender
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-end">
+                        Amount
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        created at
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers"
+                    class="bg-white border-b group overflow-x-hidden transition-all duration-500 hover:bg-slate-50">
+                    <th scope="row"
+                        class="flex flex-row gap-2 px-6 py-4 font-semibold text-gray-900 whitespace-nowrap items-center">
+                        <img [src]="customer.image||'./../../../assets/no-photo.png'" [alt]="customer.firstName"
+                            class="w-10">
+                        <span>{{customer.firstName[0]}}. {{customer.lastName}}</span>
+                    </th>
+                    <td class="px-6 py-4">
+                        {{customer.email}}
+                    </td>
+                    <td class="px-6 py-4 flex flex-row items-center justify-center">
+                        <svg *ngIf="customer.gender==='Male'" width="20px" height="20px" viewBox="0 0 1024 1024"
+                            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="#5300b8"
+                                    d="M399.5 849.5a225 225 0 1 0 0-450 225 225 0 0 0 0 450zm0 56.25a281.25 281.25 0 1 1 0-562.5 281.25 281.25 0 0 1 0 562.5zm253.125-787.5h225q28.125 0 28.125 28.125T877.625 174.5h-225q-28.125 0-28.125-28.125t28.125-28.125z">
+                                </path>
+                                <path fill="#5300b8"
+                                    d="M877.625 118.25q28.125 0 28.125 28.125v225q0 28.125-28.125 28.125T849.5 371.375v-225q0-28.125 28.125-28.125z">
+                                </path>
+                                <path fill="#5300b8" d="M604.813 458.9 565.1 419.131l292.613-292.668 39.825 39.824z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg *ngIf="customer.gender==='Female'" width="20px" height="20px" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M9 18H15M12 13V21M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13Z"
+                                    stroke="#8b6bff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </td>
+                    <td class="px-6 py-4 text-end">
+                        ${{customer.amount||0}}
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                        {{customer.createdAt ? customer.createdAt.toLocaleString() : '---'}}
+                    </td>
+                    <td class="flex px-6 py-4 flex-row items-center gap-1">
+                        <button title="Detail" class="icon-btn">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" xml:space="preserve"
+                                width="20px" height="20px" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                            stroke: #6C3DB7;
+                                            stroke-width: 4;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st1 {
+                                            fill: none;
+                                            stroke: #1F992A;
+                                            stroke-width: 4;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st2 {
+                                            fill: none;
+                                            stroke: #6A83BA;
+                                            stroke-width: 4;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st3 {
+                                            fill: #8A8AFF;
+                                            stroke: #8A8AFF;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st4 {
+                                            fill: #6C3DB7;
+                                            stroke: #6C3DB7;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st5 {
+                                            fill: #A576FF;
+                                            stroke: #A576FF;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st6 {
+                                            fill: #F2BB41;
+                                            stroke: #F2BB41;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st7 {
+                                            fill: #E08838;
+                                            stroke: #E08838;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st8 {
+                                            fill: #1F992A;
+                                            stroke: #1F992A;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st9 {
+                                            fill: #5EC11E;
+                                            stroke: #5EC11E;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st10 {
+                                            fill: #E3FAFF;
+                                            stroke: #E3FAFF;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st11 {
+                                            fill: #FF5093;
+                                            stroke: #FF5093;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st12 {
+                                            fill: #B7257F;
+                                            stroke: #B7257F;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st13 {
+                                            fill: #5189E5;
+                                            stroke: #5189E5;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st14 {
+                                            fill: #6EBAFF;
+                                            stroke: #6EBAFF;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st15 {
+                                            fill: #EDD977;
+                                            stroke: #EDD977;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st16 {
+                                            fill: #8C43FF;
+                                            stroke: #8C43FF;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st17 {
+                                            fill: #5252BA;
+                                            stroke: #5252BA;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st18 {
+                                            fill: none;
+                                            stroke: #E3FAFF;
+                                            stroke-width: 4;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .st19 {
+                                            fill: #354C75;
+                                            stroke: #354C75;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                    <path class="st3" d="M29,15c0,0-6.8,9-14,9S1,15,1,15s6.8-9,14-9S29,15,29,15z">
+                                    </path>
+                                    <circle class="st18" cx="15" cy="15" r="5"></circle>
+                                </g>
+                            </svg>
+                        </button>
+                        <button title="Edit icon-btn" class="icon-btn">
+                            <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M823.3 938.8H229.4c-71.6 0-129.8-58.2-129.8-129.8V215.1c0-71.6 58.2-129.8 129.8-129.8h297c23.6 0 42.7 19.1 42.7 42.7s-19.1 42.7-42.7 42.7h-297c-24.5 0-44.4 19.9-44.4 44.4V809c0 24.5 19.9 44.4 44.4 44.4h593.9c24.5 0 44.4-19.9 44.4-44.4V512c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7v297c0 71.6-58.2 129.8-129.8 129.8z"
+                                        fill="#3688FF"></path>
+                                    <path
+                                        d="M483 756.5c-1.8 0-3.5-0.1-5.3-0.3l-134.5-16.8c-19.4-2.4-34.6-17.7-37-37l-16.8-134.5c-1.6-13.1 2.9-26.2 12.2-35.5l374.6-374.6c51.1-51.1 134.2-51.1 185.3 0l26.3 26.3c24.8 24.7 38.4 57.6 38.4 92.7 0 35-13.6 67.9-38.4 92.7L513.2 744c-8.1 8.1-19 12.5-30.2 12.5z m-96.3-97.7l80.8 10.1 359.8-359.8c8.6-8.6 13.4-20.1 13.4-32.3 0-12.2-4.8-23.7-13.4-32.3L801 218.2c-17.9-17.8-46.8-17.8-64.6 0L376.6 578l10.1 80.8z"
+                                        fill="#5F6379"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <button title="Delete" class="icon-btn"><svg width="20px" height="20px" viewBox="0 0 1024 1024"
+                                class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M779.5 1002.7h-535c-64.3 0-116.5-52.3-116.5-116.5V170.7h768v715.5c0 64.2-52.3 116.5-116.5 116.5zM213.3 256v630.1c0 17.2 14 31.2 31.2 31.2h534.9c17.2 0 31.2-14 31.2-31.2V256H213.3z"
+                                        fill="#ff0000"></path>
+                                    <path
+                                        d="M917.3 256H106.7C83.1 256 64 236.9 64 213.3s19.1-42.7 42.7-42.7h810.7c23.6 0 42.7 19.1 42.7 42.7S940.9 256 917.3 256zM618.7 128H405.3c-23.6 0-42.7-19.1-42.7-42.7s19.1-42.7 42.7-42.7h213.3c23.6 0 42.7 19.1 42.7 42.7S642.2 128 618.7 128zM405.3 725.3c-23.6 0-42.7-19.1-42.7-42.7v-256c0-23.6 19.1-42.7 42.7-42.7S448 403 448 426.6v256c0 23.6-19.1 42.7-42.7 42.7zM618.7 725.3c-23.6 0-42.7-19.1-42.7-42.7v-256c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7v256c-0.1 23.6-19.2 42.7-42.7 42.7z"
+                                        fill="#5F6379"></path>
+                                </g>
+                            </svg></button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
 
 </section>

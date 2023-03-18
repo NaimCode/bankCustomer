@@ -11,6 +11,8 @@ import { TransactionsSectionComponent } from './customer-page/transactions-secti
 import { CustomersSectionComponent } from './customer-page/customers-section/customers-section.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomerItemComponent } from './customer-page/customer-item/customer-item.component';
+import { CustomerMenuComponent } from './customer-page/customer-menu/customer-menu.component';
+import { AddCustomerComponent } from './customer-page/add-customer/add-customer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { CustomerItemComponent } from './customer-page/customer-item/customer-it
     NotFoundPageComponent,
     TransactionsSectionComponent,
     CustomersSectionComponent,
-    CustomerItemComponent
+    CustomerItemComponent,
+    CustomerMenuComponent,
+    AddCustomerComponent
   ],
   imports: [
     BrowserModule,
