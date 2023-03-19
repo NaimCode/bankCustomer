@@ -17,7 +17,7 @@
             </svg>
             <input placeholder="Search a customer" (input)="onSearch($event)" type="search" class="bg-transparent flex-grow outline-none">
         </div>
-        <app-add-customer/>
+        <app-add-customer (customerAdded)="onCustomerAdded($event)"/>
 
     </div>
     <hr>
@@ -39,21 +39,19 @@
                     <th scope="col" class="px-6 py-3 text-end">
                         Amount
                     </th>
-                    <th scope="col" class="px-6 py-3">
-                        created at
-                    </th>
+                  
                     <th scope="col" class="px-6 py-3">
 
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let customer of customers"
+                <tr *ngFor="let customer of customers.slice().reverse()"
                     class="bg-white border-b group overflow-x-hidden transition-all duration-500 hover:bg-slate-50">
                     <th scope="row"
                         class="flex flex-row gap-2 px-6 py-4 font-semibold text-gray-900 whitespace-nowrap items-center">
-                        <img [src]="customer.image||'./../../../assets/no-photo.png'" [alt]="customer.firstName"
-                            class="w-10">
+                        <img [src]="customer.image||'./../../../assets/no-photo.png'" [alt]=" "
+                            class="w-10 rounded-full h-10 object-cover">
                         <span>{{customer.firstName[0]}}. {{customer.lastName}}</span>
                     </th>
                     <td class="px-6 py-4">
@@ -88,222 +86,13 @@
                         </svg>
                     </td>
                     <td class="px-6 py-4 text-end">
-                        ${{customer.amount||0}}
+                        ${{customer.balance||0}}
                     </td>
-                    <td class="px-6 py-4 text-center">
-                        {{customer.createdAt ? customer.createdAt.toLocaleString() : '---'}}
-                    </td>
+                  
                     <td class="flex px-6 py-4 flex-row items-center gap-1">
-                        <button title="Detail" class="icon-btn">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" xml:space="preserve"
-                                width="20px" height="20px" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: none;
-                                            stroke: #6C3DB7;
-                                            stroke-width: 4;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st1 {
-                                            fill: none;
-                                            stroke: #1F992A;
-                                            stroke-width: 4;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st2 {
-                                            fill: none;
-                                            stroke: #6A83BA;
-                                            stroke-width: 4;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st3 {
-                                            fill: #8A8AFF;
-                                            stroke: #8A8AFF;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st4 {
-                                            fill: #6C3DB7;
-                                            stroke: #6C3DB7;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st5 {
-                                            fill: #A576FF;
-                                            stroke: #A576FF;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st6 {
-                                            fill: #F2BB41;
-                                            stroke: #F2BB41;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st7 {
-                                            fill: #E08838;
-                                            stroke: #E08838;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st8 {
-                                            fill: #1F992A;
-                                            stroke: #1F992A;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st9 {
-                                            fill: #5EC11E;
-                                            stroke: #5EC11E;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st10 {
-                                            fill: #E3FAFF;
-                                            stroke: #E3FAFF;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st11 {
-                                            fill: #FF5093;
-                                            stroke: #FF5093;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st12 {
-                                            fill: #B7257F;
-                                            stroke: #B7257F;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st13 {
-                                            fill: #5189E5;
-                                            stroke: #5189E5;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st14 {
-                                            fill: #6EBAFF;
-                                            stroke: #6EBAFF;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st15 {
-                                            fill: #EDD977;
-                                            stroke: #EDD977;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st16 {
-                                            fill: #8C43FF;
-                                            stroke: #8C43FF;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st17 {
-                                            fill: #5252BA;
-                                            stroke: #5252BA;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st18 {
-                                            fill: none;
-                                            stroke: #E3FAFF;
-                                            stroke-width: 4;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-
-                                        .st19 {
-                                            fill: #354C75;
-                                            stroke: #354C75;
-                                            stroke-width: 2;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                    <path class="st3" d="M29,15c0,0-6.8,9-14,9S1,15,1,15s6.8-9,14-9S29,15,29,15z">
-                                    </path>
-                                    <circle class="st18" cx="15" cy="15" r="5"></circle>
-                                </g>
-                            </svg>
-                        </button>
-                        <button title="Edit icon-btn" class="icon-btn">
-                            <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        d="M823.3 938.8H229.4c-71.6 0-129.8-58.2-129.8-129.8V215.1c0-71.6 58.2-129.8 129.8-129.8h297c23.6 0 42.7 19.1 42.7 42.7s-19.1 42.7-42.7 42.7h-297c-24.5 0-44.4 19.9-44.4 44.4V809c0 24.5 19.9 44.4 44.4 44.4h593.9c24.5 0 44.4-19.9 44.4-44.4V512c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7v297c0 71.6-58.2 129.8-129.8 129.8z"
-                                        fill="#3688FF"></path>
-                                    <path
-                                        d="M483 756.5c-1.8 0-3.5-0.1-5.3-0.3l-134.5-16.8c-19.4-2.4-34.6-17.7-37-37l-16.8-134.5c-1.6-13.1 2.9-26.2 12.2-35.5l374.6-374.6c51.1-51.1 134.2-51.1 185.3 0l26.3 26.3c24.8 24.7 38.4 57.6 38.4 92.7 0 35-13.6 67.9-38.4 92.7L513.2 744c-8.1 8.1-19 12.5-30.2 12.5z m-96.3-97.7l80.8 10.1 359.8-359.8c8.6-8.6 13.4-20.1 13.4-32.3 0-12.2-4.8-23.7-13.4-32.3L801 218.2c-17.9-17.8-46.8-17.8-64.6 0L376.6 578l10.1 80.8z"
-                                        fill="#5F6379"></path>
-                                </g>
-                            </svg>
-                        </button>
-                        <button title="Delete" class="icon-btn"><svg width="20px" height="20px" viewBox="0 0 1024 1024"
+                      <app-increase-balance-customer [customer]="customer" (transactionMade)="onTransactionMade($event)"/>
+                 <app-update-customer [customer]="customer" (customerUpdated)="onCustomerUpdated($event)"/>
+                        <button (click)="onDelete(customer.id)" title="Delete" class="icon-btn"><svg width="20px" height="20px" viewBox="0 0 1024 1024"
                                 class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

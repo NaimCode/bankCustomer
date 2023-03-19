@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Transaction } from './transaction.modal';
 
 @Component({
   selector: 'app-transactions-section',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./transactions-section.component.css']
 })
 export class TransactionsSectionComponent {
-
+ @Input() transactions:Transaction[] = [];
 }

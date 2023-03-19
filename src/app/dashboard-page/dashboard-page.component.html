@@ -1,1 +1,50 @@
-<p>dashboard-page works!</p>
+<section class="py-6 space-y-6">
+    <div class="flex flex-row gap-9">
+        <div class="border-4 border-dashed rounded-lg w-60 p-4 flex flex-col justify-between h-[160px]">
+            <h6 class="text-secondary">Total Transaction</h6>
+            <h2 class="text-3xl font-bold font-special">{{totalTransactions}}</h2>
+        </div>
+        <div class="border-4 border-dashed rounded-lg w-60 p-4 flex flex-col justify-between h-[160px]">
+            <h6 class="text-secondary">Total Customers</h6>
+            <h2 class="text-3xl font-bold font-special">{{totalCustomers}}</h2>
+        </div>
+        <div class="border-4 border-dashed rounded-lg w-60 p-4 flex flex-col justify-between h-[160px]">
+            <h6 class="text-secondary">Total Balance</h6>
+            <h2 class="text-3xl font-bold font-special">$ {{totalBalance}}</h2>
+        </div>
+    </div>
+    <div class="space-y-4">
+        <h6 class="border-l-4 border-purple-900 pl-6">Last updated customers</h6>
+        <div class="flex flex-row gap-4">
+            <div *ngFor="let customer of lastUpdatedCustomers"
+                class=" bg-white rounded-md shadow-sm w-[450px] justify-between p-2 flex flex-row items-center">
+                <img [src]="customer.image||'../../assets/no-photo.png'" alt=""
+                    class="w-12 h-12 object-cover rounded-full">
+                <h6>{{customer.firstName}} {{customer.lastName}}</h6>
+                <p class="text-[11px] text-gray-600 italic">{{customer.email}}</p>
+
+                <div
+                    class="py-1 font-semibold px-4 bg-purple-100 rounded-md border-purple-900 text-purple-900 font-special">
+                    ${{customer.balance||0}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="space-y-4">
+        <h6 class="border-l-4 border-purple-900 pl-6">Last updated customers</h6>
+        <div class="flex flex-row gap-4">
+            <div *ngFor="let customer of lastAddedCustomers"
+                class=" bg-white  w-[450px] justify-between rounded-md shadow-sm gap-6 p-2 flex flex-row items-center">
+                <img [src]="customer.image||'../../assets/no-photo.png'" alt=""
+                    class="w-12 h-12 object-cover rounded-full">
+                <h6>{{customer.firstName}} {{customer.lastName}}</h6>
+                <p class="text-[11px] text-gray-600 italic">{{customer.email}}</p>
+
+                <div class="py-1 font-semibold px-4 bg-purple-100 rounded-md border-purple-900 text-purple-900">
+                    ${{customer.balance||0}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

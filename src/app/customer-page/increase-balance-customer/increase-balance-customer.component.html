@@ -1,0 +1,27 @@
+
+
+<button title="Increase Balance" (click)="modalIsOpen = true"
+    class="flex flex-row gap-2 text-xs font-semibold items-center hover:bg-background rounded-md px-2 py-[6px]">
+    <svg width="20px" height="20px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M41 25C41 34.9411 32.9411 43 23 43C13.0589 43 5 34.9411 5 25C5 15.0589 13.0589 7 23 7" stroke="#92c030" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 28.5C20.5 28.5 24 28 31 19" stroke="#92c030" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M23 19H31V27" stroke="#92c030" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M31 5V9.5" stroke="#92c030" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M43.5 17L39 17" stroke="#92c030" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M40.8892 7L37.0001 10.8891" stroke="#92c030" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
+</button>
+<div *ngIf="modalIsOpen" class="fixed top-0 left-0 w-screen h-screen bg-black/50 z-[100] flex flex-row items-center justify-center">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" class="bg-white rounded-md p-6  w-[500px] space-y-4">
+        <h6>Increase Balance of <span class="font-bold">{{customer?.firstName}} {{customer?.lastName}}</span></h6>
+        <hr>
+       
+       <span> $</span> <input  formControlName="amount" type="number" class="ml-4">
+   
+   
+       <div class="mt-10 flex flex-row gap-6">
+        <button (click)="modalIsOpen=false" class="text-btn">
+            Cancel
+        </button>
+        <button [disabled]="!form.valid" class="primary-btn disabled:bg-amber-200 disabled:cursor-not-allowed !important">
+            add
+        </button>
+       </div>
+    </form>
+
+
+</div>

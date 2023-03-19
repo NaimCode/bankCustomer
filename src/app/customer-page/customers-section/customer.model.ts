@@ -8,7 +8,7 @@ export interface Customer{
     address:string,
     //
     image?:string,
-    amount?:number,
+    balance?:number,
 
     createdAt?:Date,
     updatedAt?:Date,

@@ -25,4 +25,10 @@
      input, textarea{
       @apply outline-none p-[2px] px-3 rounded-sm bg-background
      }
+     .text-btn{
+      @apply  font-semibold text-xs !important;
+     }
+     .primary-btn{
+      @apply  bg-secondary text-xs text-white font-semibold rounded-md px-4 py-1;
+     }
 }
