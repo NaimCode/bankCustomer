@@ -1,5 +1,5 @@
-<section class="bg-white rounded-xl p-6 shadow-sm space-y-3 w-[900px]">
-    <div class="flex flex-row justify-between items-center gap-6">
+<section class="bg-white rounded-xl p-6 shadow-lg space-y-3 w-[90vw] md:w-[900px] animate-[on-view-right_400ms]">
+    <div class="flex flex-row justify-between items-center gap-1 md:gap-6">
         <h4>Customers</h4>
         <div class="flex-grow"></div>
         <div class="w-[250px] bg-accent rounded-md p-1 px-2 flex flex-row gap-2 items-center text-gray-700">
@@ -15,7 +15,7 @@
                         fill="#000000"></path>
                 </g>
             </svg>
-            <input placeholder="Search a customer" (input)="onSearch($event)" type="search" class="bg-transparent flex-grow outline-none">
+            <input placeholder="Search a customer" (input)="onSearch($event)" type="search" class="bg-transparent flex-grow outline-none w-[120px] md:w-auto">
         </div>
         <app-add-customer (customerAdded)="onCustomerAdded($event)"/>
 

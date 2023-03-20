@@ -26,22 +26,19 @@ export class CustomersSectionComponent {
       distinctUntilChanged(),
     
     )
-    .subscribe((results) => {
-     
+    .subscribe((results) => { 
         this.service.searchCustomers(results!).subscribe((customers)=>{
           this.customers=customers;
         });
-      
     });
 
    }
 
    onCustomerAdded(customer:Customer){
-      this.customers.push(customer);
+      this.customers=[...this.customers,customer];
    }
     onCustomerUpdated(customer:Customer){
-      const index = this.customers.findIndex((c)=>c.id===customer.id);
-      this.customers[index]=customer;
+      this.customers=this.customers.map((c)=>c.id===customer.id?customer:c);
     }
    onSearch(event:Event){
       const term = (event.target as HTMLInputElement).value;
@@ -53,9 +50,7 @@ export class CustomersSectionComponent {
       });
    }
   onTransactionMade(transaction:Transaction){
-    const index = this.customers.findIndex((c)=>c.id===transaction.customerId);
-    this.customers[index].balance=(transaction.amount) + (this.customers[index].balance!||0);
+    this.customers=this.customers.map((c)=>({...c,balance:(c.balance||0)+transaction.amount}))
     this.transactionMade.emit(transaction);
-
   }
 }

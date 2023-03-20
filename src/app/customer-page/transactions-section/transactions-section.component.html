@@ -1,5 +1,5 @@
-<div class="w-full h-[180px] flex flex-col justify-between bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 rounded-lg shadow-lg">
-<div class="flex justify-between m-2">
+<div class="w-full h-[180px]   flex flex-col justify-between bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 rounded-lg shadow-lg animate-[on-view-left_200ms]">
+<div class="flex justify-between m-2 ">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="34"
@@ -48,8 +48,9 @@
 </div>
 </div>
 
-<div class="mt-6 flex flex-col items-stretch gap-2">
-<div *ngFor="let transaction of transactions.reverse()" class="bg-white rounded-md p-2 flex flex-row items-center w-full justify-between">
+<div class="mt-6 flex flex-col items-stretch gap-2 animate-[on-view-left_800ms] lg:h-auto h-[400px] overflow-y-auto lg:overflow-hidden px-3">
+  <h3>Transactions</h3>
+<div *ngFor="let transaction of transactions.reverse()" class="bg-white rounded-md p-2 flex flex-row items-center w-full justify-between shadow-sm transition-all hover:scale-105 hover:shadow-md">
  <h6>{{transaction.customerName}}</h6>
     <p class="font-semibold text-secondary italic">+ ${{transaction.amount}}</p>
 </div>

@@ -16,6 +16,6 @@ export class CustomerPageComponent {
     });
   }
 onTransactionMade(transaction:Transaction){
-  this.transactions.push(transaction);
+  this.transactions=[...this.transactions,transaction];
 }
 }

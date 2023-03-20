@@ -18,6 +18,35 @@ module.exports = {
         'special':[ 'Josefin Sans', 'sans-serif']
       }
     },
+    keyframes:{
+      'on-view-right':{
+        '0%':{
+          opacity:0,
+          transform:'translateX(100px)'
+        },
+        '100%':{opacity:1,
+          transform:'translateX(0px)'}
+
+      },
+      'on-view-left':{
+        '0%':{
+          opacity:0,
+          transform:'translateX(-100px)'
+        },
+        '100%':{opacity:1,
+          transform:'translateX(0px)'}
+
+      },
+      'on-view-up':{
+        '0%':{
+          opacity:0,
+          transform:'translateY(-100px)'
+        },
+        '100%':{opacity:1,
+          transform:'translateY(0px)'}
+
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),

@@ -8,13 +8,6 @@
       "id": "1679246439663"
     },
     {
-      "amount": 10000,
-      "customerId": "dLkKFYC",
-      "customerName": "Nizar Oukh",
-      "createdAt": "2023-03-19T17:29:49.392Z",
-      "id": "1679246989392"
-    },
-    {
       "amount": 20,
       "customerId": "K6mV6qO",
       "customerName": "Naim Test",
@@ -62,6 +55,41 @@
       "customerName": "Bogey Stothard",
       "createdAt": "2023-03-19T17:33:48.269Z",
       "id": "1679247228269"
+    },
+    {
+      "amount": 30000,
+      "customerId": "bPo12EJ",
+      "customerName": "Daoud IssaL",
+      "createdAt": "2023-03-19T17:38:48.150Z",
+      "id": "1679247528150"
+    },
+    {
+      "amount": 100000,
+      "customerId": "K6mV6qO",
+      "customerName": "Naim Test",
+      "createdAt": "2023-03-19T17:40:29.684Z",
+      "id": "1679247629685"
+    },
+    {
+      "amount": 1,
+      "customerId": "1a10257c-9ea4-42b6-adec-1700abf84458",
+      "customerName": "Gene Devonish",
+      "createdAt": "2023-03-19T17:40:45.784Z",
+      "id": "1679247645784"
+    },
+    {
+      "amount": 2,
+      "customerId": "829faa61-7264-446b-96ef-47f26c037fb4",
+      "customerName": "Davie Town",
+      "createdAt": "2023-03-19T17:41:07.331Z",
+      "id": "1679247667331"
+    },
+    {
+      "amount": 200,
+      "customerId": "bPo12EJ",
+      "customerName": "Daoud IssaLee",
+      "createdAt": "2023-03-20T14:27:13.559Z",
+      "id": "1679322433559"
     }
   ],
   "customers": [
@@ -260,8 +288,8 @@
       "email": "gdevonishr@uiuc.edu",
       "gender": "Female",
       "address": "9299 Erie Junction",
-      "balance": 2000,
-      "updatedAt": "2023-03-19T17:32:54.977Z"
+      "balance": 102001,
+      "updatedAt": "2023-03-19T17:40:45.740Z"
     },
     {
       "id": "829faa61-7264-446b-96ef-47f26c037fb4",
@@ -269,7 +297,9 @@
       "lastName": "Town",
       "email": "dtowns@e-recht24.de",
       "gender": "Male",
-      "address": "69915 Messerschmidt Circle"
+      "address": "69915 Messerschmidt Circle",
+      "balance": 2,
+      "updatedAt": "2023-03-19T17:41:07.279Z"
     },
     {
       "id": "a0299050-7a99-4eab-8d42-d0bce08f0e85",
@@ -287,33 +317,21 @@
       "email": "naim.magnus@gmail.com",
       "address": "Agdal 40",
       "image": "https://images.unsplash.com/photo-1466112928291-0903b80a9466?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-      "balance": 11,
+      "balance": 100011,
       "gender": "Male",
       "id": "K6mV6qO",
-      "updatedAt": "2023-03-19T17:30:02.672Z"
-    },
-    {
-      "firstName": "Nizar",
-      "lastName": "Oukh",
-      "email": "oper@gmail.com",
-      "address": "Tuiondnk fdkfnkdnfdfdf",
-      "image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-      "balance": 320000,
-      "gender": "female",
-      "createdAt": "2023-03-18T19:29:14.185Z",
-      "id": "dLkKFYC",
-      "updatedAt": "2023-03-19T17:29:49.342Z"
+      "updatedAt": "2023-03-19T17:40:29.635Z"
     },
     {
       "id": "bPo12EJ",
       "firstName": "Daoud",
-      "lastName": "IssaL",
+      "lastName": "IssaLee",
       "email": "fdhfdfdjfhd@gmail.com",
       "address": "fdfdfhdfjhdfdfdfd",
       "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-      "balance": 3000,
-      "gender": "Female",
-      "updatedAt": "2023-03-19T17:20:39.614Z"
+      "balance": 83200,
+      "gender": "Male",
+      "updatedAt": "2023-03-20T14:27:13.509Z"
     }
   ]
 }
